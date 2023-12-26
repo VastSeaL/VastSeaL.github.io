@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2023/12/26/hello-world/"/>
+    <url>/2023/12/26/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>相关学习链接</title>
+    <link href="/2023/12/22/%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0%E8%BF%9E%E6%8E%A5/"/>
+    <url>/2023/12/22/%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0%E8%BF%9E%E6%8E%A5/</url>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><p><a href="https://numpy.org.cn/">Numpy</a></p><h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><h2 id="Pytorch"><a href="#Pytorch" class="headerlink" title="Pytorch"></a>Pytorch</h2><p><a href="https://pytorch.org/docs/stable/index.html">Pytorch官网手册</a><br><a href="https://speech.ee.ntu.edu.tw/~hylee/ml/2021-spring.php">李宏毅2021 Spring</a><br><a href="https://enzo-miman.github.io/#/README">Enzo 课件</a><br><a href="https://www.cnblogs.com/nickchen121/p/15105048.html">水论文程序猿</a><br><a href="https://blog.csdn.net/qq_33746593/article/details/107202590">位置编码与注意力机制</a></p><h3 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h3><p><a href="https://kazemnejad.com/blog/transformer_architecture_positional_encoding/#proposed-method">T one</a><br><a href="https://nlp.seas.harvard.edu/2018/04/03/attention.html#model-architecture">T 2</a><br><a href="https://zhuanlan.zhihu.com/p/403433120">T 3</a></p><h1 id="网站博客搭建"><a href="#网站博客搭建" class="headerlink" title="网站博客搭建"></a>网站博客搭建</h1><p><a href="https://zhuanlan.zhihu.com/p/547520780?utm_id=0">Hexo搭建</a></p><p><a href="https://blog.csdn.net/K1052176873/article/details/122879462">Hexo 多机</a></p><p>Windows命令行进入对应文件路径：</p><p><strong>C:\WINDOWS\system32&gt;D:</strong></p><p><em><strong>D:&gt;cd BBlog</strong></em></p><p><code>hexo clean</code> 删除 public 文件夹，即删除旧的博客文章</p><p><code>hexo g</code> 生成 public 文件夹，即生成新的博客文章相关 html 文件</p><p><code>hexo d</code> 将博客推送到 github</p><h1 id="海洋机器人"><a href="#海洋机器人" class="headerlink" title="海洋机器人"></a>海洋机器人</h1>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Learning Link</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
