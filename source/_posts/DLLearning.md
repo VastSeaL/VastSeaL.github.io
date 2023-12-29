@@ -114,11 +114,9 @@ x.foo()        # 正常输出
 x.__foo()      # 报错
 ```
 
-###类的专有方法
+### 类的专有方法
 
-{% asset_img 1.png This is an image %}
-
-
+![类的专有方法](类专有方法.png)
 
 ## **方法**：
 
@@ -332,7 +330,7 @@ x.__foo()      # 报错
   super(student, test).speak()
   ```
 
-##**实例化：**
+## **实例化：**
 
 创建一个类的实例，类的具体对象。
 
@@ -358,33 +356,35 @@ x.__foo()      # 报错
 
 非凸函数： 局部最优
 
-<img src="D:\人工智能\photo\pytorch md\凸函数" alt="image-20221116142311981" style="zoom:50%;" />
+![局部优化](局部优化.png)
 
 鞍点：梯度为0
 
-![image-20221116142642619](D:\人工智能\photo\pytorch md\鞍点.jpj)
+![鞍点](鞍点1.png)
 
-![image-20221116142925931](D:\人工智能\photo\pytorch md\梯度下降)
+![梯度下降](梯度下降.png)
 
 指数加权均值：	C~i~是当前损失，C^`^~i~是更新后损失
 
-![image-20221116143805313](D:\人工智能\photo\pytorch md\指数加权均值)
+![指数加权均值](指数加权均值.png)
 
 训练发散：训练集正确训练后都是收敛的，对于训练发散常见原因是学习率取得太大 
 
+![SGD](SGD.png)
+
 ## 随机梯度下降(SGD)
 
-![image-20221116144201757](D:\人工智能\photo\pytorch md\随机梯度下降.pnj)
+![SGD](SGD.png)
 
 ## Batch
 
 在梯度下降算法w计算是可以并行的
 
-![image-20221116145124845](D:\人工智能\photo\pytorch md\Batch)
+![Batch](Batch.png)
 
-#Back Propagation 反向传播
+## Back Propagation 反向传播
 
-![image-20221116150521974](D:\人工智能\photo\pytorch md\反向传播.pnj)
+![反向传播](反向传播.png)
 
 ![image-20221116151255009](D:\人工智能\photo\pytorch md\fanxiangchuanbo.pnj)
 
@@ -394,9 +394,9 @@ x.__foo()      # 报错
 
 Backward
 
-![image-20221116152120646](D:\人工智能\photo\pytorch md\chain rule.pnj)
+![chain rule](chain rule.png)
 
-![image-20221116153023895](D:\人工智能\photo\pytorch md\求梯度.pnj)
+![求梯度](求梯度.png)
 
 ## Pytorch中前馈和反馈计算
 
@@ -404,33 +404,33 @@ tensor:Pytorch中存储数据数据
 
 ​			data		grad
 
-![image-20221116153512231](D:\人工智能\photo\pytorch md\tensor.pnj)
+![tensor]tensor.png)
 
 # 用Pytorch实现线性回归
 
-![image-20221117134749098](D:\人工智能\photo\pytorch md\pytorch实现)
+![pytorch实现](pytorch实现.png)
 
 ## 广播机制
 
-![image-20221117135124782](D:\人工智能\photo\pytorch md\广播机制)
+![广播机制](广播机制.png)
 
 ## affine model 仿射模型 
 
 线性单元
 
-![image-20221117140010765](D:\人工智能\photo\pytorch md\仿射模型.pnj)
+![线性单元](线性单元.png)
 
 列数为维度，loss为标量
 
 定义模型时必须继承自nn.Module类	构造函数：__ init __() 初始化构造对象使用的函数 和 forward()函数  前馈过程中必须使用的函数 必须定义   backward无是因为Module对象会自动求导
 
-![image-20221117140403006](D:\人工智能\photo\pytorch md\definite module..pnj)
+![definite module](definite module.png)
 
 torch.nn.Linear(,)构造对象
 
 nn: Neural Network
 
-![image-20221117143117510](D:\人工智能\photo\pytorch md\nn_linear.pnj)
+![nn_linear](nn_linear.png)
 
 ## 训练过程
 
@@ -487,21 +487,21 @@ torchvision中有很多数据集
 
 参数train表示想要下载的是训练集还是测试集
 
-![image-20221121142857457](D:\人工智能\photo\pytorch md\minist)
+![minist](minist.png)
 
 ##Logistic Function
 
-![image-20221121144142954](D:\人工智能\photo\pytorch md\logistic)
+![logistic](logistic.png)
 
 sigmoid functions
 
-![image-20221121144317732](D:\人工智能\photo\pytorch md\sigmoid functions)
+![sigmoid functions](sigmoid functions.png)
+
+## Logistic Regression Model
 
 
 
-##Logistic Regression Model
-
-![image-20221121144514372](D:\人工智能\photo\pytorch md\logistic Regression Model)
+![logistic Regression Model](logistic Regression Model.png)
 
 ## Loss function for Binary Classification
 
@@ -509,13 +509,13 @@ sigmoid functions
 
 BCE
 
-![image-20221121145001408](D:\人工智能\photo\pytorch md\Loss function classcification)
+![Loss function classcification](Loss function classcification.png)
 
 两个分布间的差异
 
 交叉熵
 
-![image-20221121150352368](D:\人工智能\photo\pytorch md\BCE)
+![BCE](BCE.png)
 
 # 处理多维特征的输入
 
@@ -525,11 +525,11 @@ BCE
 
 并行计算
 
-![image-20221205173832561](D:\人工智能\photo\pytorch md\mini batch)
+![mini batch](mini batch.png)
 
 ## 构造多层神经网络
 
-![image-20221205175024819](D:\人工智能\photo\pytorch md\Linear Layer)
+![Linear Layer](Linear Layer.png)
 
 # 加载数据集
 
@@ -547,23 +547,23 @@ Iteration:迭代了多少次
 
 shuffle=True 打乱数据集
 
-![image-20221205204633113](D:\人工智能\photo\pytorch md\shuffle)
+![shuffle](shuffle.png)
 
 # 多分类问题
 
 实现输出分类的要求 大于0 和为1
 
-![image-20221208151950706](D:\人工智能\photo\pytorch md\sigmoid)
+![多分类](分类.png)
 
-![image-20221208152435101](D:\人工智能\photo\pytorch md\softmax)
+![softmaxlayer](softmaxlayer.png)
 
-![image-20221208152553537](D:\人工智能\photo\pytorch md\softmax example)
+![softmaxexample](softmaxexample.png)
 
 ## NLLLoss
 
-![image-20221208153731662](D:\人工智能\photo\pytorch md\NLLLoss)
+![NLLLoss](NLLLoss.png)
 
-![image-20221208153816627](D:\人工智能\photo\pytorch md\torch.crossEntropy)
+![torchcrossEntropy](torchcrossEntropy.png)
 
 ```python
 import torch
@@ -661,7 +661,7 @@ if __name__ == '__main__':
 
 输入张量的维度 与 输出张量的维度
 
-![image-20221208191834585](D:\人工智能\photo\pytorch md\CNN)
+![cnn](cnn.png)
 
 Feature Extraction 特征提取器 		Classification 分类器
 
@@ -671,17 +671,17 @@ RGB——
 
 栅格图像			矢量图像 
 
-![image-20221208194310511](D:\人工智能\photo\pytorch md\Convolution)
+![Convolution](Convolution.png)
 
-![image-20221208195206388](D:\人工智能\photo\pytorch md\convolution 你inputchannels)
+![convolutioninputchannels](convolutioninputchannels.png)
 
-![image-20221208195249426](D:\人工智能\photo\pytorch md\Convolution n input channels and M output Channels)
+![Convolution n input channels and M output Channels](Convolution n input channels and M output Channels.png)
 
-![image-20221208202749780](D:\人工智能\photo\pytorch md\Convolution Layer)
+![Convolution Layer](Convolution Layer.png)
 
 ## padding
 
-![image-20221208203047225](D:\人工智能\photo\pytorch md\padding)
+![padding](padding.png)
 
 ## stride 步长
 
@@ -691,25 +691,25 @@ RGB——
 
 ## Max Pooling  最大池化层
 
-![image-20221208204115830](D:\人工智能\photo\pytorch md\MaxPooling)
+![MaxPooling](MaxPooling.png)
 
 分成n*n组，找每组的最大值
 
-![image-20221208204503171](D:\人工智能\photo\pytorch md\Simple Example)
+![Simple Example](Simple Example.png)
 
 减少代码冗余：函数/类
 
 Concatenate：拼接 将张量沿着通道连接
 
-![image-20221209100738941](D:\人工智能\photo\pytorch md\concatenate)
+![concatenate](concatenate.png)
 
 What is 1×1 convolution？
 
 信息融合  改变通道数量
 
-![image-20221209101316370](D:\人工智能\photo\pytorch md\1×1 convolution) 
+![1×1 convolution](1×1 convolution.png) 
 
-![image-20221209102406979](D:\人工智能\photo\pytorch md\why  is 1×1)
+![why  is 1×1](why  is 1×1.png)
 
 # 循环神经网络 RNN
 
