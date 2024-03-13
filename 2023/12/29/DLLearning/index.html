@@ -24,14 +24,14 @@
 <meta property="og:description" content="PythonPython内置函数enumerate()函数enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。 1enumerate(sequence, [start&#x3D;0])  参数 sequence – 一个序列、迭代器或其他支持迭代对象。 start – 下标起始位置的值。  返回值返回 enum">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2023/12/29/DLLearning/%E7%B1%BB%E4%B8%93%E6%9C%89%E6%96%B9%E6%B3%95.png">
-<meta property="og:image" content="http://example.com/2023/12/29/DLLearning/%E5%B1%80%E9%83%A8%E4%BC%98%E5%8C%96.png">
-<meta property="og:image" content="http://example.com/2023/12/29/DLLearning/%E9%9E%8D%E7%82%B91.png">
-<meta property="og:image" content="http://example.com/2023/12/29/DLLearning/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D.png">
-<meta property="og:image" content="http://example.com/%E6%8C%87%E6%95%B0%E5%8A%A0%E6%9D%83%E5%9D%87%E5%80%BC.png">
-<meta property="og:image" content="http://example.com/2023/12/29/DLLearning/SGD.png">
-<meta property="og:image" content="http://example.com/2023/12/29/DLLearning/SGD.png">
-<meta property="og:image" content="http://example.com/2023/12/29/DLLearning/Batch.png">
-<meta property="og:image" content="http://example.com/2023/12/29/DLLearning/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD.png">
+<meta property="og:image" content="http://example.com/DLLearning/%E5%B1%80%E9%83%A8%E4%BC%98%E5%8C%96.png">
+<meta property="og:image" content="http://example.com/DLLearning/%E9%9E%8D%E7%82%B91.png">
+<meta property="og:image" content="http://example.com/DLLearning/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D-1709876079639.png">
+<meta property="og:image" content="http://example.com/DLLearning/%E6%8C%87%E6%95%B0%E5%8A%A0%E6%9D%83%E5%9D%87%E5%80%BC.png">
+<meta property="og:image" content="http://example.com/DLLearning/SGD-1709876084120.png">
+<meta property="og:image" content="http://example.com/DLLearning/SGD-1709876089590.png">
+<meta property="og:image" content="http://example.com/DLLearning/Batch-1709876094077.png">
+<meta property="og:image" content="http://example.com/DLLearning/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD-1709876096499.png">
 <meta property="og:image" content="http://example.com/2023/12/29/DLLearning/%E6%B1%82%E6%A2%AF%E5%BA%A6.png">
 <meta property="og:image" content="http://example.com/2023/12/29/DLLearning/pytorch%E5%AE%9E%E7%8E%B0.png">
 <meta property="og:image" content="http://example.com/2023/12/29/DLLearning/%E5%B9%BF%E6%92%AD%E6%9C%BA%E5%88%B6.png">
@@ -91,8 +91,14 @@
 <meta property="og:image" content="d:\%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD\image-20230825155754620.png">
 <meta property="og:image" content="d:\%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD\image-20230825155841487.png">
 <meta property="og:image" content="d:\%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD\image-20230825160140398.png">
+<meta property="og:image" content="http://example.com/DLLearning/image-20240308133900769.png">
+<meta property="og:image" content="http://example.com/DLLearning/image-20240308140642558.png">
+<meta property="og:image" content="http://example.com/DLLearning/image-20240308140707560.png">
+<meta property="og:image" content="http://example.com/DLLearning/image-20240308141100197.png">
+<meta property="og:image" content="http://example.com/DLLearning/image-20240309133739464.png">
+<meta property="og:image" content="http://example.com/DLLearning/image-20240309195631483.png">
 <meta property="article:published_time" content="2023-12-29T07:33:32.000Z">
-<meta property="article:modified_time" content="2023-12-29T08:53:50.806Z">
+<meta property="article:modified_time" content="2024-03-09T11:56:41.135Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/2023/12/29/DLLearning/%E7%B1%BB%E4%B8%93%E6%9C%89%E6%96%B9%E6%B3%95.png">
@@ -288,7 +294,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          9.4k words
+          9.5k words
         
       </span>
     
@@ -299,7 +305,7 @@
         
         
         
-          79 mins
+          80 mins
         
       </span>
     
@@ -431,18 +437,18 @@ BaseClassName（实例中的基类名）必须与派生类定义在一个作用�
 <p> 梯度(Gradient): </p>
 <p>梯度下降法也会陷入到局部最优，后来在神经网络中发现用梯度下降算法很难陷入局部最优点</p>
 <p>非凸函数： 局部最优</p>
-<p><img src="/2023/12/29/DLLearning/%E5%B1%80%E9%83%A8%E4%BC%98%E5%8C%96.png" srcset="/img/loading.gif" lazyload alt="局部优化"></p>
+<p><img src="/DLLearning/%E5%B1%80%E9%83%A8%E4%BC%98%E5%8C%96.png" srcset="/img/loading.gif" lazyload alt="局部优化"></p>
 <p>鞍点：梯度为0</p>
-<p><img src="/2023/12/29/DLLearning/%E9%9E%8D%E7%82%B91.png" srcset="/img/loading.gif" lazyload alt="鞍点"></p>
-<p><img src="/2023/12/29/DLLearning/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D.png" srcset="/img/loading.gif" lazyload alt="梯度下降"></p>
+<p><img src="/DLLearning/%E9%9E%8D%E7%82%B91.png" srcset="/img/loading.gif" lazyload alt="鞍点"></p>
+<p><img src="/DLLearning/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D-1709876079639.png" srcset="/img/loading.gif" lazyload alt="梯度下降"></p>
 <p>指数加权均值：	C<del>i</del>是当前损失，C^&#96;^<del>i</del>是更新后损失</p>
-<p><img src="/%E6%8C%87%E6%95%B0%E5%8A%A0%E6%9D%83%E5%9D%87%E5%80%BC.png" srcset="/img/loading.gif" lazyload alt="指数加权均值"></p>
+<p><img src="/DLLearning/%E6%8C%87%E6%95%B0%E5%8A%A0%E6%9D%83%E5%9D%87%E5%80%BC.png" srcset="/img/loading.gif" lazyload alt="指数加权均值"></p>
 <p>训练发散：训练集正确训练后都是收敛的，对于训练发散常见原因是学习率取得太大 </p>
-<p><img src="/2023/12/29/DLLearning/SGD.png" srcset="/img/loading.gif" lazyload alt="SGD"></p>
-<h2 id="随机梯度下降-SGD"><a href="#随机梯度下降-SGD" class="headerlink" title="随机梯度下降(SGD)"></a>随机梯度下降(SGD)</h2><p><img src="/2023/12/29/DLLearning/SGD.png" srcset="/img/loading.gif" lazyload alt="SGD"></p>
+<p><img src="/DLLearning/SGD-1709876084120.png" srcset="/img/loading.gif" lazyload alt="SGD"></p>
+<h2 id="随机梯度下降-SGD"><a href="#随机梯度下降-SGD" class="headerlink" title="随机梯度下降(SGD)"></a>随机梯度下降(SGD)</h2><p><img src="/DLLearning/SGD-1709876089590.png" srcset="/img/loading.gif" lazyload alt="SGD"></p>
 <h2 id="Batch"><a href="#Batch" class="headerlink" title="Batch"></a>Batch</h2><p>在梯度下降算法w计算是可以并行的</p>
-<p><img src="/2023/12/29/DLLearning/Batch.png" srcset="/img/loading.gif" lazyload alt="Batch"></p>
-<h2 id="Back-Propagation-反向传播"><a href="#Back-Propagation-反向传播" class="headerlink" title="Back Propagation 反向传播"></a>Back Propagation 反向传播</h2><p><img src="/2023/12/29/DLLearning/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD.png" srcset="/img/loading.gif" lazyload alt="反向传播"></p>
+<p><img src="/DLLearning/Batch-1709876094077.png" srcset="/img/loading.gif" lazyload alt="Batch"></p>
+<h2 id="Back-Propagation-反向传播"><a href="#Back-Propagation-反向传播" class="headerlink" title="Back Propagation 反向传播"></a>Back Propagation 反向传播</h2><p><img src="/DLLearning/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD-1709876096499.png" srcset="/img/loading.gif" lazyload alt="反向传播"></p>
 <p>![image-20221116151255009](D:\人工智能\photo\pytorch md\fanxiangchuanbo.pnj)</p>
 <h2 id="Chain-Rule-链式法则"><a href="#Chain-Rule-链式法则" class="headerlink" title="Chain Rule 链式法则"></a>Chain Rule 链式法则</h2><p> 前馈</p>
 <p>Backward</p>
@@ -1065,6 +1071,14 @@ BaseClassName（实例中的基类名）必须与派生类定义在一个作用�
 <p><img src="D:\人工智能\image-20230825155754620.png" srcset="/img/loading.gif" lazyload alt="image-20230825155754620"></p>
 <p><img src="D:\人工智能\image-20230825155841487.png" srcset="/img/loading.gif" lazyload alt="image-20230825155841487"></p>
 <p><img src="D:\人工智能\image-20230825160140398.png" srcset="/img/loading.gif" lazyload alt="image-20230825160140398"></p>
+<h1 id="Enzo-Mi"><a href="#Enzo-Mi" class="headerlink" title="Enzo_Mi"></a>Enzo_Mi</h1><h2 id="训练日志"><a href="#训练日志" class="headerlink" title="训练日志"></a>训练日志</h2><h3 id="Logging"><a href="#Logging" class="headerlink" title="Logging"></a>Logging</h3><p><img src="/DLLearning/image-20240308133900769.png" srcset="/img/loading.gif" lazyload alt="image-20240308133900769"></p>
+<p><img src="/DLLearning/image-20240308140642558.png" srcset="/img/loading.gif" lazyload alt="image-20240308140642558"></p>
+<p><img src="/DLLearning/image-20240308140707560.png" srcset="/img/loading.gif" lazyload alt="image-20240308140707560"></p>
+<p><img src="/DLLearning/image-20240308141100197.png" srcset="/img/loading.gif" lazyload alt="image-20240308141100197"></p>
+<h3 id="wandb"><a href="#wandb" class="headerlink" title="wandb"></a>wandb</h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/9_gb7Fv8FKvYtjBSOev9Ag">30分钟吃掉wandb模型训练可视化 (qq.com)</a></p>
+<p><img src="/DLLearning/image-20240309133739464.png" srcset="/img/loading.gif" lazyload alt="image-20240309133739464"></p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/y2yamlbWemGGMw29Kub1Lg">30分钟吃掉wandb可视化自动调参 参数调优 </a></p>
+<p><img src="/DLLearning/image-20240309195631483.png" srcset="/img/loading.gif" lazyload alt="image-20240309195631483"></p>
 
                 
               </div>
