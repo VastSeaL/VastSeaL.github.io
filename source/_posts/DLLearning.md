@@ -1990,9 +1990,25 @@ x正规化后，W作用也可能会使训练困难，feature Normalization可以
 
 # [PyTorch](https://so.csdn.net/so/search?q=PyTorch&spm=1001.2101.3001.7020)数据集归一化- torchvision.transforms.Normalize()
 
+### Batch Normalization
 
+![image-20240512111250867](D:\Hexo\VastSeaL.github.io\source\_posts\DLLearning\image-20240512111250867.png)
 
+![image-20240512114616126](D:\Hexo\VastSeaL.github.io\source\_posts\DLLearning\image-20240512114616126.png)
 
+![image-20240512115632112](D:\Hexo\VastSeaL.github.io\source\_posts\DLLearning\image-20240512115632112.png)
+
+![image-20240512120105375](D:\Hexo\VastSeaL.github.io\source\_posts\DLLearning\image-20240512120105375.png)
+
+![image-20240512120650308](D:\Hexo\VastSeaL.github.io\source\_posts\DLLearning\image-20240512120650308.png)
+
+![image-20240512121035386](D:\Hexo\VastSeaL.github.io\source\_posts\DLLearning\image-20240512121035386.png)
+
+![image-20240512121345622](D:\Hexo\VastSeaL.github.io\source\_posts\DLLearning\image-20240512121345622.png)
+
+![image-20240512121710998](D:\Hexo\VastSeaL.github.io\source\_posts\DLLearning\image-20240512121710998.png)
+
+![image-20240512121925102](D:\Hexo\VastSeaL.github.io\source\_posts\DLLearning\image-20240512121925102.png)
 
 Pytorch数据归一化
 
