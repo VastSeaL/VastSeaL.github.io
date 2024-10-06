@@ -1,12 +1,7 @@
 ---
-typora-root-url: pytorch框架
+title: pytorch框架
+tags: Deep Learning
 ---
-
-
-
-
-
-
 
 # Python
 
