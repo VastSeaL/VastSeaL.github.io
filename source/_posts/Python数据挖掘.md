@@ -1,3 +1,9 @@
+---
+title: Matplotlib库使用
+---
+
+
+
 # Matplotlib
 
 ##2.1matplotlib之HelloWorld
