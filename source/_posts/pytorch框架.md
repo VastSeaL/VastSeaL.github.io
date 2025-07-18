@@ -7,6 +7,118 @@ tags: Deep Learning
 
 # Python内置函数
 
+### if \__name__ == "__main__"
+
+`if __name__ == "__main__"` 是 Python 中的一种常见结构，用于判断一个模块是否是直接运行的程序。这个结构在模块被导入时不会执行，而在直接运行时会执行。它的意义在于帮助开发者控制代码的执行方式。
+
+**`__name__` 的含义**:
+
+- 当 Python 文件被直接运行时，`__name__` 的值被设置为 `"__main__"`。
+- 当 Python 文件作为模块被导入时，`__name__` 的值将是该模块的名字（即文件名，不包括扩展名）。
+
+**使用场景**:
+
+- 这个结构通常用于测试代码或作为脚本的入口点。通过将执行的代码放在这个结构下，可以避免在模块被导入时不必要的代码执行
+
+  ### 示例代码
+
+  ```python
+  python复制代码# calculator.py
+  
+  def add(a, b):
+      return a + b
+  
+  def subtract(a, b):
+      return a - b
+  
+  def multiply(a, b):
+      return a * b
+  
+  def divide(a, b):
+      if b == 0:
+          raise ValueError("Cannot divide by zero.")
+      return a / b
+  
+  def main():
+      print("Simple Calculator")
+      print("1. Add")
+      print("2. Subtract")
+      print("3. Multiply")
+      print("4. Divide")
+  
+      choice = input("Choose an operation (1/2/3/4): ")
+  
+      a = float(input("Enter first number: "))
+      b = float(input("Enter second number: "))
+  
+      if choice == '1':
+          print(f"The result is: {add(a, b)}")
+      elif choice == '2':
+          print(f"The result is: {subtract(a, b)}")
+      elif choice == '3':
+          print(f"The result is: {multiply(a, b)}")
+      elif choice == '4':
+          print(f"The result is: {divide(a, b)}")
+      else:
+          print("Invalid choice!")
+  
+  if __name__ == "__main__":
+      main()
+  ```
+
+  ### 如何使用
+
+  1. **直接运行**:
+
+     - 将上述代码保存为 `calculator.py`。
+
+     - 在命令行中运行：
+
+       ```python
+       bash
+       
+       
+       复制代码
+       python calculator.py
+       ```
+
+     - 程序将提示你选择操作和输入两个数字，然后输出计算结果。
+
+  2. **作为模块导入**:
+
+     - 创建另一个 Python 文件，例如 `main.py`，并导入 `calculator` 模块：
+
+       ```python
+       python复制代码# main.py
+       import calculator
+       
+       # 现在你可以使用 calculator 模块中的函数
+       result = calculator.add(10, 5)
+       print(f"10 + 5 = {result}")
+       ```
+
+     - 运行 `main.py`：
+
+       ```Python
+       bash
+       
+       
+       复制代码
+       python main.py
+       ```
+
+     - 这将输出：
+
+       ```Python
+       复制代码
+       10 + 5 = 15
+       ```
+
+  ### 总结
+
+  - 当你直接运行 `calculator.py` 时，`main()` 函数将被调用，程序会执行计算器的功能。
+  - 当你导入 `calculator` 模块时，`main()` 函数不会被执行，你可以直接使用其中定义的计算函数。这样可以避免不必要的代码执行，保持模块的灵活性和可重用性。
+
 ### enumerate()函数
 
 enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。
