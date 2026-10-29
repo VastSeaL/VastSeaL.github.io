@@ -1,5 +1,7 @@
 ---
 title: Matplotlib库使用
+description: 从 Matplotlib 可视化到 NumPy 数组与 Pandas 数据处理，整理常用方法和示例。
+date: 2024-10-11 00:00:00
 ---
 
 
@@ -1116,7 +1118,7 @@ data_new = data.replace(to_replace="?", value=np.nan)
 
 ## 4.7 数据离散化
 
-![image-20221031151945710](D:\人工智能\深度学习\graph\image-20221031151642094.png)
+> 原笔记附件暂缺：image-20221031151642094.png。
 
 - 实现方法：
 

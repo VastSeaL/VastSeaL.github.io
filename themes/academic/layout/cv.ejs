@@ -1,0 +1,2 @@
+<header class="page-heading"><p class="eyebrow">CURRICULUM VITAE</p><h1>个人简历</h1><p><%= profile().name %></p></header>
+<% if (profile().cv) { %><section class="cv-panel"><h2>简历 / CV</h2><p>查看完整的教育经历、研究工作和项目实践。</p><a class="text-button" href="<%= url_for(profile().cv) %>" target="_blank" rel="noopener noreferrer">查看简历 PDF ↗</a></section><% } else { %><section class="empty-state"><span class="empty-symbol" aria-hidden="true">CV.</span><h2>简历待补充</h2><p>完整简历将在整理后提供。</p><a href="<%= url_for('/about/') %>">了解本站 →</a></section><% } %>

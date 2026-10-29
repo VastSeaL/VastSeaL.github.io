@@ -1,0 +1,7 @@
+<a class="back-link" href="<%= url_for('/blog/') %>">← 返回博客</a>
+<header class="article-heading"><div class="eyebrow">NOTEBOOK / <%= date(page.date, 'YYYY') %></div><h1><%= page.title %></h1><div class="article-meta"><time datetime="<%= date(page.date, 'YYYY-MM-DD') %>"><%= date(page.date, 'YYYY 年 M 月 D 日') %></time><span><%= reading_minutes(page) %> 分钟阅读</span><% post_taxonomy(page).forEach(tag => { %><a href="<%= url_for(tag.path) %>"><%= tag.name %></a><% }); %></div><% if (page.description) { %><p class="article-description"><%= page.description %></p><% } %></header>
+<div class="article-layout">
+  <article class="article-content"><%- page.content %></article>
+  <% const contents = toc(page.content, { list_number: false, max_depth: 3 }); if (contents) { %><aside class="article-aside"><details class="toc-panel" open><summary>文章目录</summary><nav aria-label="文章目录"><%- contents %></nav></details></aside><% } %>
+</div>
+<nav class="post-neighbors" aria-label="相邻文章"><div><% if (page.prev) { %><span class="small-label">较新一篇</span><a href="<%= url_for(page.prev.path) %>">← <%= page.prev.title %></a><% } %></div><div><% if (page.next) { %><span class="small-label">较早一篇</span><a href="<%= url_for(page.next.path) %>"><%= page.next.title %> →</a><% } %></div></nav>

@@ -1,0 +1,2 @@
+<header class="page-heading"><p class="eyebrow">PROJECTS</p><h1>项目实践</h1><p>从一个想法出发，记录探索与实现的过程。</p></header>
+<% const projects = collection('projects'); if (projects.length) { %><%- partial('_partials/projects', { projects }) %><% } else { %><section class="empty-state"><span class="empty-symbol" aria-hidden="true">&lt;/&gt;</span><h2>项目资料待补充</h2><p>这里将展示项目介绍、实验演示与开源代码。</p><% if (profile().github) { %><a href="<%= profile().github %>" target="_blank" rel="noopener noreferrer">访问 GitHub ↗</a><% } %></section><% } %>

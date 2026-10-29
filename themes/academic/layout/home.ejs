@@ -1,0 +1,20 @@
+<% const person = profile(); const papers = collection('publications').filter(p => p.selected); const projects = collection('projects').filter(p => p.selected); const news = collection('news'); %>
+<section class="intro-section" aria-labelledby="intro-heading">
+  <div class="intro-copy">
+    <p class="eyebrow">RESEARCH & NOTES</p>
+    <h1 id="intro-heading"><%= person.name %><% if (person.name_secondary) { %><span class="secondary-name"><%= person.name_secondary %></span><% } %></h1>
+    <p class="intro-tagline"><%= person.tagline %></p>
+    <p class="intro-description"><%= person.intro %></p>
+    <div class="social-links"><% if (person.email) { %><a href="mailto:<%= person.email %>">Email</a><% } %><% if (person.github) { %><a href="<%= person.github %>" target="_blank" rel="noopener noreferrer">GitHub ↗</a><% } %><% if (person.scholar) { %><a href="<%= person.scholar %>" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><% } %><% if (person.orcid) { %><a href="<%= person.orcid %>" target="_blank" rel="noopener noreferrer">ORCID ↗</a><% } %><a href="<%= url_for('/about/') %>">关于我 →</a></div>
+  </div>
+  <figure class="portrait"><% if (person.avatar) { %><img src="<%= url_for(person.avatar) %>" alt="<%= person.name %>的照片" width="184" height="208"><% } else { %><div class="monogram" role="img" aria-label="<%= person.name %> 姓名首字母标识"><img src="<%= url_for('/images/monogram.svg') %>" alt="" width="184" height="208"><span><%= person.name.split(/\s+/).map(s => s.charAt(0)).slice(0, 2).join('') %><i>.</i></span></div><figcaption>CONTROL · LEARNING</figcaption><% } %></figure>
+</section>
+<div class="interests"><span class="small-label">关注主题</span><% (person.interests || []).forEach(topic => { %><span><%= topic %></span><% }); %></div>
+<% if (news.length) { %><section class="section-block"><div class="section-heading"><h2>近期动态 <span>NEWS</span></h2></div><ul class="news-list"><% news.forEach(item => { %><li><time><%= item.date %></time><span><% if (item.url) { %><a href="<%= item.url %>"><%= item.text %></a><% } else { %><%= item.text %><% } %></span></li><% }); %></ul></section><% } %>
+<% if (papers.length) { %><section class="section-block"><div class="section-heading"><h2>代表论文 <span>SELECTED PUBLICATIONS</span></h2><a href="<%= url_for('/publications/') %>">全部论文 →</a></div><%- partial('_partials/papers', { papers }) %></section><% } %>
+<% if (projects.length) { %><section class="section-block"><div class="section-heading"><h2>精选项目 <span>SELECTED PROJECTS</span></h2><a href="<%= url_for('/projects/') %>">全部项目 →</a></div><%- partial('_partials/projects', { projects }) %></section><% } %>
+<section class="section-block recent-writing" aria-labelledby="writing-heading">
+  <div class="section-heading"><h2 id="writing-heading">最近笔记 <span>RECENT WRITING</span></h2><a href="<%= url_for('/blog/') %>">全部文章 <span aria-hidden="true">↗</span></a></div>
+  <div class="post-list"><% site.posts.sort('-date').limit(4).each(post => { %><%- partial('_partials/post-row', { post, compact: true }) %><% }); %></div>
+</section>
+<section class="explore-section" aria-label="更多内容"><a href="<%= url_for('/publications/') %>"><span class="eyebrow">PUBLICATIONS</span><h2>学术论文 <span>↗</span></h2><p><%= collection('publications').length ? '论文、摘要与引用信息。' : '论文资料整理后，将在这里汇集。' %></p></a><a href="<%= url_for('/projects/') %>"><span class="eyebrow">PROJECTS</span><h2>项目实践 <span>↗</span></h2><p><%= collection('projects').length ? '项目介绍、演示与开源代码。' : '项目资料整理后，将在这里展示。' %></p></a></section>

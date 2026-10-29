@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: Haoze Luo
+subtitle: '研究与技术笔记'
+description: 'Haoze Luo，工学博士。研究领域包括无人船运动控制、深度强化学习等。'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: Haoze Luo
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://vastseal.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -44,6 +44,7 @@ post_asset_folder: true
 marked:
   prependRoot: true
   postAsset: true
+  lazyload: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -63,7 +64,7 @@ prismjs:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: blog
   per_page: 10
   order_by: -date
 
@@ -99,7 +100,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fluid
+theme: academic
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

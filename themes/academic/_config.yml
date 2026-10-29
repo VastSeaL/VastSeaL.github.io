@@ -1,0 +1,7 @@
+name: Academic
+navigation:
+  - {label: 首页, path: /, key: home}
+  - {label: 论文, path: /publications/, key: publications}
+  - {label: 项目, path: /projects/, key: projects}
+  - {label: 博客, path: /blog/, key: blog}
+  - {label: 简历, path: /cv/, key: cv}

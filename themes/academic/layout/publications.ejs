@@ -1,0 +1,2 @@
+<header class="page-heading"><p class="eyebrow">PUBLICATIONS</p><h1>学术论文</h1><p>研究成果、论文摘要与引用信息。</p></header>
+<% const papers = collection('publications').slice().sort((a, b) => Number(b.year) - Number(a.year)); if (papers.length) { %><%- partial('_partials/papers', { papers }) %><% } else { %><section class="empty-state"><span class="empty-symbol" aria-hidden="true">[ p. ]</span><h2>论文资料待补充</h2><p>这里将整理论文列表、摘要，以及相关代码和引用信息。</p><a href="<%= url_for('/blog/') %>">先读一篇学习笔记 →</a></section><% } %>

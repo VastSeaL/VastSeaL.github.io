@@ -1,0 +1,16 @@
+# Personal information. Leave unknown fields empty; the theme hides empty links.
+name: Haoze Luo
+name_secondary: ''
+tagline: '工学博士'
+intro: '研究领域包括无人船运动控制、深度强化学习等。在这里记录研究与实践，也分享编程、数据分析和深度学习笔记。'
+bio: []
+interests:
+  - 无人船运动控制
+  - 深度强化学习
+# Use a site path such as /images/avatar.jpg when a real portrait is available.
+avatar: ''
+github: https://github.com/VastSeaL
+email: ''
+scholar: ''
+orcid: ''
+cv: ''

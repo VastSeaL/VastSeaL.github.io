@@ -1,0 +1,52 @@
+<% const person = profile(); const activeNav = page.nav || (is_post() || is_archive() || is_category() || is_tag() || page.__index ? 'blog' : ''); const displayTitle = page.title || (page.__index ? '博客笔记' : is_category() ? '分类：' + page.category : is_tag() ? '标签：' + page.tag : is_archive() ? '时间归档' : ''); const pageTitle = displayTitle ? displayTitle + ' · ' + config.title : config.title + ' · ' + config.subtitle; const canonicalUrl = full_url_for((page.path || '').replace(/index\.html$/, '')); %>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title><%= pageTitle %></title>
+  <meta name="description" content="<%= page.description || config.description %>">
+  <meta name="author" content="<%= config.author %>">
+  <link rel="canonical" href="<%= canonicalUrl %>">
+  <meta property="og:title" content="<%= pageTitle %>">
+  <meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>">
+  <meta property="og:url" content="<%= canonicalUrl %>">
+  <meta property="og:description" content="<%= page.description || config.description %>">
+  <link rel="icon" type="image/svg+xml" href="<%= url_for('/images/mark.svg') %>">
+  <script src="<%= url_for('/js/theme.js') %>"></script>
+  <link rel="stylesheet" href="<%= url_for('/css/site.css') %>">
+  <script src="<%= url_for('/js/site.js') %>" defer></script>
+</head>
+<body class="<%= is_post() ? 'post-page' : '' %>">
+  <a class="skip-link" href="#main-content">跳到正文</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="<%= url_for('/') %>" aria-label="<%= person.name %> 首页"><span class="wordmark-symbol" aria-hidden="true"><%= person.name.charAt(0).toLowerCase() %>.</span><span><%= person.name %></span></a>
+      <nav class="main-nav" aria-label="主导航">
+        <% theme.navigation.forEach(item => { %>
+          <a href="<%= url_for(item.path) %>" <%- activeNav === item.key ? 'aria-current="page"' : '' %>><%= item.label %></a>
+        <% }); %>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" type="button" data-open-search aria-label="搜索文章" title="搜索文章（/）"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg></button>
+        <button class="icon-button" type="button" id="theme-toggle" aria-label="切换深色模式" aria-pressed="false" title="切换深色模式"><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A8.3 8.3 0 0 1 9.8 4a8.3 8.3 0 1 0 10.2 10.2Z"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main-content" class="site-main" tabindex="-1"><%- body %></main>
+  <footer class="site-footer">
+    <div><a class="footer-name" href="<%= url_for('/') %>"><%= person.name %></a><span class="footer-note">学习、研究与实践记录</span></div>
+    <nav aria-label="页脚导航"><a href="<%= url_for('/about/') %>">关于</a><a href="<%= url_for('/archives/') %>">归档</a><% if (person.github) { %><a href="<%= person.github %>" target="_blank" rel="noopener noreferrer">GitHub ↗</a><% } %></nav>
+    <div class="footer-bottom"><span>© <%= date(Date.now(), 'YYYY') %> <%= person.name %></span><span>Built with Hexo · Academic</span></div>
+  </footer>
+  <dialog id="search-dialog" aria-labelledby="search-heading" data-index="<%= url_for('/search.json') %>">
+    <div class="dialog-heading"><h2 id="search-heading">搜索笔记</h2><button type="button" class="icon-button close-dialog" aria-label="关闭搜索">✕</button></div>
+    <label class="visually-hidden" for="search-input">关键词</label><input type="search" id="search-input" placeholder="搜索标题或正文，例如 Python" autocomplete="off">
+    <p id="search-status" class="muted" role="status">输入关键词，查找所有文章。</p><div id="search-results"></div>
+    <div class="dialog-footer">按 Esc 关闭 <span>全文搜索 · <%= site.posts.length %> 篇笔记</span></div>
+  </dialog>
+  <dialog id="image-dialog" aria-label="图片预览"><button type="button" class="icon-button close-dialog" aria-label="关闭图片预览">✕</button><img alt=""><p></p></dialog>
+  <noscript><p class="noscript-note">文章和导航可正常阅读；搜索、图片放大和主题切换需要启用 JavaScript。</p></noscript>
+</body>
+</html>

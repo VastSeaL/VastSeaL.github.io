@@ -1,7 +1,9 @@
 ---
 title: Python库使用教程
+description: 使用 argparse 构建 Python 命令行工具，整理位置参数、可选参数与互斥参数组的用法。
+date: 2025-07-18 00:00:00
 tags: Python 
-categories: turorial
+categories: tutorial
 ---
 
 
@@ -161,14 +163,14 @@ else:
             print(result)
 ```
 
-![image-20250718153326180](Python库使用教程/image-20250718153326180.png)
+![image-20250718153326180](<image-20250718153326180.png>)
 
-![image-20250718154021928](Python库使用教程/image-20250718154021928.png)
+![image-20250718154021928](<image-20250718154021928.png>)
 
-![image-20250718154036497](Python库使用教程/image-20250718154036497.png)
+![image-20250718154036497](<image-20250718154036497.png>)
 
-![image-20250718154052971](Python库使用教程/image-20250718154052971.png)
+![image-20250718154052971](<image-20250718154052971.png>)
 
-![image-20250718154115195](Python库使用教程/image-20250718154115195.png)
+![image-20250718154115195](<image-20250718154115195.png>)
 
-![image-20250718154124967](Python库使用教程/image-20250718154124967.png)
+![image-20250718154124967](<image-20250718154124967.png>)

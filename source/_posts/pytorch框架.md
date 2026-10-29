@@ -1,5 +1,7 @@
 ---
 title: pytorch框架
+description: 从 Python 基础、梯度下降到 PyTorch 神经网络，记录 CNN、RNN 与深度学习课程笔记。
+date: 2024-10-06 00:00:00
 tags: Deep Learning
 ---
 
@@ -447,7 +449,7 @@ x.__foo()      # 报错
 
 ##MSE（平均平方误差 Mean Square Error）
 
-![image-20221116141550394](D:\人工智能\photo\pytorch md\d2l-en-pytorch.pdf)
+> 原笔记附件暂缺：d2l-en-pytorch.pdf。
 
 穷举法
 
@@ -461,7 +463,7 @@ x.__foo()      # 报错
 
 非凸函数： 局部最优
 
-<img src="凸函数" alt="image-20221116142311981" style="zoom:50%;" />
+<img src="/2024/10/06/pytorch%E6%A1%86%E6%9E%B6/%E5%87%B8%E5%87%BD%E6%95%B0" alt="image-20221116142311981" style="zoom:50%;" />
 
 鞍点：梯度为0
 
@@ -497,7 +499,7 @@ x.__foo()      # 报错
 
 Backward
 
-![image-20221116152120646](chain rule.pnj)
+![image-20221116152120646](<chain rule.pnj>)
 
 ![image-20221116153023895](求梯度.pnj)
 
@@ -527,7 +529,7 @@ tensor:Pytorch中存储数据数据
 
 定义模型时必须继承自nn.Module类	构造函数：__ init __() 初始化构造对象使用的函数 和 forward()函数  前馈过程中必须使用的函数 必须定义   backward无是因为Module对象会自动求导
 
-![image-20221117140403006](definite module..pnj)
+![image-20221117140403006](<definite module..pnj>)
 
 torch.nn.Linear(,)构造对象
 
@@ -598,13 +600,13 @@ torchvision中有很多数据集
 
 sigmoid functions
 
-![image-20221121144317732](sigmoid functions)
+![image-20221121144317732](<sigmoid functions>)
 
 
 
 ##Logistic Regression Model
 
-![image-20221121144514372](logistic Regression Model)
+![image-20221121144514372](<logistic Regression Model>)
 
 ## Loss function for Binary Classification
 
@@ -612,7 +614,7 @@ sigmoid functions
 
 BCE
 
-![image-20221121145001408](Loss function classcification)
+![image-20221121145001408](<Loss function classcification>)
 
 两个分布间的差异
 
@@ -628,11 +630,11 @@ BCE
 
 并行计算
 
-![image-20221205173832561](mini batch)
+![image-20221205173832561](<mini batch>)
 
 ## 构造多层神经网络
 
-![image-20221205175024819](Linear Layer)
+![image-20221205175024819](<Linear Layer>)
 
 # 加载数据集
 
@@ -656,17 +658,17 @@ shuffle=True 打乱数据集
 
 实现输出分类的要求 大于0 和为1
 
-![image-20221208151950706](D:\人工智能\photo\pytorch md\sigmoid)
+![image-20221208151950706](<sigmoid>)
 
 ![image-20221208152435101](softmax)
 
-![image-20221208152553537](softmax example)
+![image-20221208152553537](<softmax example>)
 
 ## NLLLoss
 
 ![image-20221208153731662](NLLLoss)
 
-![image-20221208153816627](D:\人工智能\photo\pytorch md\torch.crossEntropy)
+![image-20221208153816627](<torch.crossEntropy>)
 
 ```python
 import torch
@@ -776,15 +778,15 @@ RGB——
 
 ![image-20221208194310511](Convolution)
 
-![image-20221208195206388](convolution 你inputchannels)
+![image-20221208195206388](<convolution 你inputchannels>)
 
-![image-20221208195249426](Convolution n input channels and M output Channels)
+![image-20221208195249426](<Convolution n input channels and M output Channels>)
 
-![image-20221208202749780](pytorch md\Convolution Layer)
+![image-20221208202749780](<Convolution Layer>)
 
 ## padding
 
-![image-20221208203047225](D:\人工智能\photo\pytorch md\padding)
+![image-20221208203047225](<padding>)
 
 ## stride 步长
 
@@ -798,7 +800,7 @@ RGB——
 
 分成n*n组，找每组的最大值
 
-![image-20221208204503171](Simple Example)
+![image-20221208204503171](<Simple Example>)
 
 减少代码冗余：函数/类
 
@@ -810,9 +812,9 @@ What is 1×1 convolution？
 
 信息融合  改变通道数量
 
-![image-20221209101316370](1×1 convolution) 
+![image-20221209101316370](<1×1 convolution>)
 
-![image-20221209102406979](why  is 1×1)
+![image-20221209102406979](<why  is 1×1>)
 
 # 循环神经网络 RNN
 
@@ -824,35 +826,35 @@ RNN：处理具有序列连接的输入数据（例如：金融股市、天气�
 
 本质：线形层，把某个维度映射到另一个维度的空间。 Linear
 
-![image-20221214165453611](RNN Cell)
+![image-20221214165453611](<RNN Cell>)
 
-![image-20221214171337356](RNN Cell2)
+![image-20221214171337356](<RNN Cell2>)
 
-![image-20221214171356832](D:\人工智能\photo\pytorch md\RNN Cell3)
+![image-20221214171356832](<RNN Cell3>)
 
-![image-20221214171723190](RNN Cell in Pytorch)
+![image-20221214171723190](<RNN Cell in Pytorch>)
 
-![image-20221214174335513](RNN Cell in Pytorch 2)
+![image-20221214174335513](<RNN Cell in Pytorch 2>)
 
 ## How to use RNNCell
 
-![image-20221214174455158](use RNNCell1)
+![image-20221214174455158](<use RNNCell1>)
 
-![image-20221214174611539](use RNNCell2)
+![image-20221214174611539](<use RNNCell2>)
 
-![image-20221214174814307](use RNNCell3)
+![image-20221214174814307](<use RNNCell3>)
 
 ## How to use RNN
 
-![image-20221214174959457](use RNN1)
+![image-20221214174959457](<use RNN1>)
 
-![image-20221214180055695](use RNN2)
+![image-20221214180055695](<use RNN2>)
 
-![image-20221214180951812](use RNN3)
+![image-20221214180951812](<use RNN3>)
 
-![image-20221214181039389](use RNN4)
+![image-20221214181039389](<use RNN4>)
 
-![image-20221214181656965](use RNN5)
+![image-20221214181656965](<use RNN5>)
 
 ![image-20221214181925459](batch_first1)
 
@@ -864,7 +866,7 @@ RNN：处理具有序列连接的输入数据（例如：金融股市、天气�
 
 ##Pytorch Tutorial
 
-![image-20230214164320489](pytorch turtorial)
+![image-20230214164320489](<pytorch turtorial>)
 
 ###Step1 Load Data
 
@@ -894,7 +896,7 @@ torch.utils.data.Dataset & torch.utils.data.DataLoader
 
 ##### Creating tensors
 
-![image-20230214150139489](creat tensors)
+![image-20230214150139489](<creat tensors>)
 
 
 
@@ -964,9 +966,9 @@ x.grad
 
 ####Build your own neural network
 
-![image-20230214163500685](build network)
+![image-20230214163500685](<build network>)
 
-![image-20230214163623783](build network2)
+![image-20230214163623783](<build network2>)
 
 
 
@@ -975,7 +977,7 @@ x.grad
 torch.nn.MSELoss
 torch.nn.CrossEntropyLoss etc.
 
-![image-20230214163759146](Loss functions)
+![image-20230214163759146](<Loss functions>)
 
 ### Step 4 Optimization Algorithm
 
@@ -985,19 +987,19 @@ torch.nn.CrossEntropyLoss etc.
 
 ### Step 5 Entire Procedure
 
-![image-20230214164603078](nn training setup)
+![image-20230214164603078](<nn training setup>)
 
-![image-20230214164730311](nn training loop)
+![image-20230214164730311](<nn training loop>)
 
-![image-20230214165115010](nn Validation loop)
+![image-20230214165115010](<nn Validation loop>)
 
-![image-20230214165337476](nn testing loop)
+![image-20230214165337476](<nn testing loop>)
 
 ![image-20230214170501908](notice)
 
 ### Save/Load Trained Models
 
-![image-20230214170609228](save load models)
+![image-20230214170609228](<save load models>)
 
 ## Gradient Decent
 
@@ -1021,23 +1023,23 @@ torch.nn.CrossEntropyLoss etc.
 
 ### Step 1 Model
 
-![image-20230216104238590](regression model)
+![image-20230216104238590](<regression model>)
 
 ### Step2 Goodness of Function
 
-![image-20230216104604935](regression goodnessof function)
+![image-20230216104604935](<regression goodnessof function>)
 
 ### Step3 Best Function
 
-![image-20230216104653344](regression best function)
+![image-20230216104653344](<regression best function>)
 
-![image-20230216104725243](gradient descent)
+![image-20230216104725243](<gradient descent>)
 
 Local minima 				Global minima
 
 ### Model Selection
 
-![image-20230216104921552](regression model selection)
+![image-20230216104921552](<regression model selection>)
 
 ****Overfitting**:   A  more complex model does not always lead to better performance on testing data.**
 
@@ -1051,7 +1053,7 @@ Redefine Loss function
 
 
 
-![image-20230216105114915](regression regularization)
+![image-20230216105114915](<regression regularization>)
 
 **Smoother**：meaning is when the input change, the output change smaller(smooth)
 
@@ -1069,37 +1071,37 @@ Why we want a smooth function?: If some noises corrupt input x~i~ When testing�
 
 ### Gaussian Distribution
 
-![image-20230216142409305](gaussian diutution)
+![image-20230216142409305](<gaussian diutution>)
 
 
 
-![image-20230216142609834](probability from class)
+![image-20230216142609834](<probability from class>)
 
-![image-20230216142701986](Maximum Likehood)
+![image-20230216142701986](<Maximum Likehood>)
 
-![image-20230216143712066](maximum likehood2)
+![image-20230216143712066](<maximum likehood2>)
 
 ## Logistic Regression
 
-![image-20230216144705245](Logistic regree)
+![image-20230216144705245](<Logistic regree>)
 
-![image-20230216144840928](logistic regree2)
+![image-20230216144840928](<logistic regree2>)
 
-![image-20230216150359309](logistic regree3)
+![image-20230216150359309](<logistic regree3>)
 
-![image-20230216150747837](logistic regress4)
+![image-20230216150747837](<logistic regress4>)
 
-![image-20230216152128713](logistic regree5)
+![image-20230216152128713](<logistic regree5>)
 
-![image-20230216153003383](logistic regree6)
+![image-20230216153003383](<logistic regree6>)
 
-![image-20230216153048539](logistic regree7)
+![image-20230216153048539](<logistic regree7>)
 
 ![image-20230216153209267](image-20230216153209267.png)
 
  ![image-20230216153429112](image-20230216153429112.png)
 
-![image-20230216154717652](cross entropy)
+![image-20230216154717652](<cross entropy>)
 
 ![image-20230216155931419](image-20230216155931419.png)
 
@@ -1307,7 +1309,7 @@ Feature Transformation
 
 ![image-20230219175650535](image-20230219175650535.png)
 
-<img src="image-20230219175745769.png" alt="image-20230219175745769" style="zoom:50%;" />
+<img src="/2024/10/06/pytorch%E6%A1%86%E6%9E%B6/image-20230219175745769.png" alt="image-20230219175745769" style="zoom:50%;" />
 
 ![image-20230219182432823](image-20230219182432823.png)
 
@@ -1435,7 +1437,7 @@ Feature Transformation
 
 ![image-20230219141400722](image-20230219141400722.png)
 
-![image-20230219141507996](D:\人工智能\photo\pytorch md\image-20230219141507996.png)
+![image-20230219141507996](<image-20230219141507996.png>)
 
 ![image-20230219142322281](image-20230219142322281.png)
 
@@ -1449,7 +1451,7 @@ L(h^all^, D~all~ )一定会比L(h^train^, D~all~ )小
 
 ![image-20230219143741645](image-20230219143741645.png)
 
-![image-20230219143939593](D:\人工智能\photo\pytorch md\image-20230219143939593.png)
+![image-20230219143939593](<image-20230219143939593.png>)
 
    ### General
 
@@ -1457,13 +1459,13 @@ L(h^all^, D~all~ )一定会比L(h^train^, D~all~ )小
 
 ![image-20230219150624632](image-20230219150624632.png)
 
-<img src="image-20230219150949584.png" alt="image-20230219150949584" style="zoom: 50%;" />
+<img src="/2024/10/06/pytorch%E6%A1%86%E6%9E%B6/image-20230219150949584.png" alt="image-20230219150949584" style="zoom: 50%;" />
 
-<img src="D:\人工智能\photo\pytorch md\image-20230219151206774.png" alt="image-20230219151206774" style="zoom:50%;" />
+<img src="/2024/10/06/pytorch%E6%A1%86%E6%9E%B6/image-20230219151206774.png" alt="image-20230219151206774" style="zoom:50%;" />
 
-<img src="image-20230219151432675.png" alt="image-20230219151432675" style="zoom:50%;" />
+<img src="/2024/10/06/pytorch%E6%A1%86%E6%9E%B6/image-20230219151432675.png" alt="image-20230219151432675" style="zoom:50%;" />
 
-<img src="image-20230219151632461.png" alt="image-20230219151632461" style="zoom:50%;" />
+<img src="/2024/10/06/pytorch%E6%A1%86%E6%9E%B6/image-20230219151632461.png" alt="image-20230219151632461" style="zoom:50%;" />
 
 ![image-20230219151824419](image-20230219151824419.png)
 
@@ -1665,7 +1667,7 @@ Pooling主要的作用是减少运算量
 
 ![image-20230223164116773](image-20230223164116773.png)
 
-![image-20230223164131670](D:\人工智能\photo\pytorch md\image-20230223164131670.png)
+![image-20230223164131670](<image-20230223164131670.png>)
 
 ### Sequence Labeling
 
@@ -1841,7 +1843,7 @@ Sinkhorn Sorting Network如何实现加速的？[解释 第28分钟](https://www
 
 
 
-![image-20230227173153780](D:\人工智能\photo\pytorch md\image-20230227173153780.png)
+![image-20230227173153780](<image-20230227173153780.png>)
 
 ![image-20230227173605771](image-20230227173605771.png)
 

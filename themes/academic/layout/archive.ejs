@@ -1,0 +1,4 @@
+<header class="page-heading"><p class="eyebrow">ARCHIVE</p><h1><%= page.category ? '分类：' + page.category : page.tag ? '标签：' + page.tag : page.year ? page.year + ' 年' + (page.month ? ' ' + page.month + ' 月' : '') : '时间归档' %></h1><p>记录每一步积累。</p></header>
+<%- partial('_partials/blog-nav') %>
+<div class="post-list"><% page.posts.each(post => { %><%- partial('_partials/post-row', { post, compact: true }) %><% }); %></div>
+<% if (page.total > 1) { %><nav class="pagination" aria-label="文章分页"><%- paginator({ prev_text: '← 上一页', next_text: '下一页 →' }) %></nav><% } %>
