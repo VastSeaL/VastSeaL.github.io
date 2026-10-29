@@ -1,376 +1,85 @@
 
-
-<!DOCTYPE html>
-<html lang="en" data-default-color-scheme=auto>
-
-
-
+<!doctype html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="John Doe">
-  <meta name="keywords" content="">
-  
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Archives">
-<meta property="og:url" content="http://example.com/archives/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary_large_image">
-  
-  
-  
-  <title>Archives - Hexo</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>时间归档 · Haoze Luo</title>
+  <meta name="description" content="Haoze Luo，工学博士。研究领域包括无人船运动控制、深度强化学习等。">
+  <meta name="author" content="Haoze Luo">
+  <link rel="canonical" href="https://vastseal.github.io/archives/">
+  <meta property="og:title" content="时间归档 · Haoze Luo">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vastseal.github.io/archives/">
+  <meta property="og:description" content="Haoze Luo，工学博士。研究领域包括无人船运动控制、深度强化学习等。">
+  <link rel="icon" type="image/svg+xml" href="/images/mark.svg">
+  <script src="/js/theme.js"></script>
+  <link rel="stylesheet" href="/css/site.css">
+  <script src="/js/site.js" defer></script>
 <meta name="generator" content="Hexo 7.0.0"></head>
-
-
-<body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 60vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>Fluid</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
+<body class="">
+  <a class="skip-link" href="#main-content">跳到正文</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/" aria-label="Haoze Luo 首页"><span class="wordmark-symbol" aria-hidden="true">h.</span><span>Haoze Luo</span></a>
+      <nav class="main-nav" aria-label="主导航">
         
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
-                <i class="iconfont icon-home-fill"></i>
-                <span>Home</span>
-              </a>
-            </li>
-          
+          <a href="/" >首页</a>
         
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>Archives</span>
-              </a>
-            </li>
-          
+          <a href="/publications/" >论文</a>
         
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>Categories</span>
-              </a>
-            </li>
-          
+          <a href="/projects/" >项目</a>
         
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>Tags</span>
-              </a>
-            </li>
-          
+          <a href="/blog/" aria-current="page">博客</a>
         
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>About</span>
-              </a>
-            </li>
-          
+          <a href="/cv/" >简历</a>
         
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="Archives"></span>
-          
-        </div>
-
-        
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" type="button" data-open-search aria-label="搜索文章" title="搜索文章（/）"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg></button>
+        <button class="icon-button" type="button" id="theme-toggle" aria-label="切换深色模式" aria-pressed="false" title="切换深色模式"><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A8.3 8.3 0 0 1 9.8 4a8.3 8.3 0 1 0 10.2 10.2Z"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg></button>
       </div>
-
-      
     </div>
-  </div>
-</div>
-
-</div>
-
   </header>
+  <main id="main-content" class="site-main" tabindex="-1"><header class="page-heading"><p class="eyebrow">ARCHIVE</p><h1>时间归档</h1><p>记录每一步积累。</p></header>
+<nav class="blog-nav" aria-label="文章浏览"><a href="/blog/" >全部文章</a><a href="/archives/" aria-current="page">时间归档</a><a href="/tags/" >标签</a><a href="/categories/" >分类</a><button type="button" data-open-search>搜索 <span aria-hidden="true">⌕</span></button></nav>
 
-  <main>
-    
-      <div class="container nopadding-x-md">
-        <div id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">4 posts in total</p>
-  <hr>
-  
-  
-    
-      
-      <p class="h5">2025</p>
-    
-    <a href="/2025/07/18/Python%E5%BA%93%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" class="list-group-item list-group-item-action">
-      <time>07-18</time>
-      <div class="list-group-item-title">Python库使用教程</div>
-    </a>
-  
-    
-      
-      <p class="h5">2024</p>
-    
-    <a href="/2024/10/11/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/" class="list-group-item list-group-item-action">
-      <time>10-11</time>
-      <div class="list-group-item-title">Matplotlib库使用</div>
-    </a>
-  
-    
-    <a href="/2024/10/06/pytorch%E6%A1%86%E6%9E%B6/" class="list-group-item list-group-item-action">
-      <time>10-06</time>
-      <div class="list-group-item-title">pytorch框架</div>
-    </a>
-  
-    
-      
-      <p class="h5">2023</p>
-    
-    <a href="/2023/12/22/%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0%E8%BF%9E%E6%8E%A5/" class="list-group-item list-group-item-action">
-      <time>12-22</time>
-      <div class="list-group-item-title">相关学习链接</div>
-    </a>
-  
+<div class="post-list"><article class="post-row">
+  <time class="post-date" datetime="2025-07-18">2025.07.18</time>
+  <div class="post-row-body"><h3><a href="/2025/07/18/Python%E5%BA%93%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">Python库使用教程</a></h3><p>使用 argparse 构建 Python 命令行工具，整理位置参数、可选参数与互斥参数组的用法。</p><div class="post-row-meta"><a href="/tags/Python/">Python</a><span>3 分钟阅读</span></div></div>
+  <a class="row-arrow" href="/2025/07/18/Python%E5%BA%93%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" aria-label="阅读：Python库使用教程">↗</a>
+</article>
+<article class="post-row">
+  <time class="post-date" datetime="2024-10-11">2024.10.11</time>
+  <div class="post-row-body"><h3><a href="/2024/10/11/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/">Matplotlib库使用</a></h3><p>从 Matplotlib 可视化到 NumPy 数组与 Pandas 数据处理，整理常用方法和示例。</p><div class="post-row-meta"><span>22 分钟阅读</span></div></div>
+  <a class="row-arrow" href="/2024/10/11/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/" aria-label="阅读：Matplotlib库使用">↗</a>
+</article>
+<article class="post-row">
+  <time class="post-date" datetime="2024-10-06">2024.10.06</time>
+  <div class="post-row-body"><h3><a href="/2024/10/06/pytorch%E6%A1%86%E6%9E%B6/">pytorch框架</a></h3><p>从 Python 基础、梯度下降到 PyTorch 神经网络，记录 CNN、RNN 与深度学习课程笔记。</p><div class="post-row-meta"><a href="/tags/Deep-Learning/">Deep Learning</a><span>22 分钟阅读</span></div></div>
+  <a class="row-arrow" href="/2024/10/06/pytorch%E6%A1%86%E6%9E%B6/" aria-label="阅读：pytorch框架">↗</a>
+</article>
+<article class="post-row">
+  <time class="post-date" datetime="2023-12-22">2023.12.22</time>
+  <div class="post-row-body"><h3><a href="/2023/12/22/%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0%E8%BF%9E%E6%8E%A5/">相关学习链接</a></h3><p>编程、深度学习、控制与机器人领域的学习资源，以及常用科研工具和参考链接。</p><div class="post-row-meta"><a href="/tags/Learning-Link/">Learning Link</a><span>4 分钟阅读</span></div></div>
+  <a class="row-arrow" href="/2023/12/22/%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0%E8%BF%9E%E6%8E%A5/" aria-label="阅读：相关学习链接">↗</a>
+</article>
 </div>
 
-
-
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-    </div>
-  
-  
-  
-  
-</div>
-
+</main>
+  <footer class="site-footer">
+    <div><a class="footer-name" href="/">Haoze Luo</a><span class="footer-note">学习、研究与实践记录</span></div>
+    <nav aria-label="页脚导航"><a href="/about/">关于</a><a href="/archives/">归档</a><a href="https://github.com/VastSeaL" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+    <div class="footer-bottom"><span>© 2026 Haoze Luo</span><span>Built with Hexo · Academic</span></div>
   </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
-
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-
-  <noscript>
-    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
-  </noscript>
+  <dialog id="search-dialog" aria-labelledby="search-heading" data-index="/search.json">
+    <div class="dialog-heading"><h2 id="search-heading">搜索笔记</h2><button type="button" class="icon-button close-dialog" aria-label="关闭搜索">✕</button></div>
+    <label class="visually-hidden" for="search-input">关键词</label><input type="search" id="search-input" placeholder="搜索标题或正文，例如 Python" autocomplete="off">
+    <p id="search-status" class="muted" role="status">输入关键词，查找所有文章。</p><div id="search-results"></div>
+    <div class="dialog-footer">按 Esc 关闭 <span>全文搜索 · 4 篇笔记</span></div>
+  </dialog>
+  <dialog id="image-dialog" aria-label="图片预览"><button type="button" class="icon-button close-dialog" aria-label="关闭图片预览">✕</button><img alt=""><p></p></dialog>
+  <noscript><p class="noscript-note">文章和导航可正常阅读；搜索、图片放大和主题切换需要启用 JavaScript。</p></noscript>
 </body>
 </html>
